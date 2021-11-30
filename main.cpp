@@ -17,7 +17,6 @@ int main() {
     cin >> let;
     verifica(let);
     if(v==1){
-        cout << "Vero" <<endl;
         cout << conv(let);
     }
     if(v==0){
