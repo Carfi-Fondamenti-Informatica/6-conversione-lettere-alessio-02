@@ -3,24 +3,25 @@
 using namespace std;
 
 char let = 'a';
-bool v=0;
+bool v;
 
 void verifica(char z) {
     if (z>=65 and 90>=z or z>=97 and 122>=z){
-        v=1;
+        v= true;
     }else{
-        v=0;
+        v= false;
     }
 }
 
 int main() {
     cin >> let;
     verifica(let);
-    if(v==1){
+    if(v== true){
         cout << conv(let);
     }
-    if(v==0){
+    if(v== false){
         cout << "errore" <<endl;
     }
     return 0;
 }
+
